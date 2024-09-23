@@ -40,21 +40,21 @@ print(circle.area(r), circle.perimeter(r))
 ```
 ## rectangle.py
 ```python
-import square
+import rectangle
 
 a = int(input())
 b = int(input())
-print(square.area(a, b), square.perimeter(a, b))
+print(rectangle.area(a, b), rectangle.perimeter(a, b))
 ```
 ## triangle.py
 ```python
-import circle
+import triangle
 
 a = int(input())
 b = int(input())
 c = int(input())
 h = int(input())
-print(circle.area(a, h), circle.perimeter(a, b, c))
+print(triangle.area(a, h), triangle.perimeter(a, b, c))
 ```
 
 # Changelog
