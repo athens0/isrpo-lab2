@@ -87,7 +87,16 @@ print(triangle.area(a, h), triangle.perimeter(a, b, c))
 ### Output
 > 24 48
 
+# Tests
+
+There a default tests in each file. unittest module required.
+
+You can launch tests for each file by command:
+> python.exe -m unittest "filename"
+
+
 # Changelog
+- 05c27fa (HEAD -> tests) Added tests for each file
 - 8ba9aeb L-03: Circle and square added
 - d078c8d (origin/main, origin/HEAD, main) L-03: Docs added
 - ace71cb added rectangle.py
