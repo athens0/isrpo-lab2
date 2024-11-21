@@ -96,6 +96,8 @@ You can launch tests for each file by command:
 
 
 # Changelog
+- 6052089 (HEAD -> tests) Added more tests
+- 9140827 (origin/tests) Updated README
 - 05c27fa (HEAD -> tests) Added tests for each file
 - 8ba9aeb L-03: Circle and square added
 - d078c8d (origin/main, origin/HEAD, main) L-03: Docs added
