@@ -42,6 +42,13 @@ class TriangleTestCase(unittest.TestCase):
         s = a * b / 2
         res = area(a, b)
         self.assertEqual(res, s)
+    
+    def test_negative_mul(self):
+        a = -5
+        b = 4
+        s = a * b / 2
+        res = area(a, b)
+        self.assertEqual(res, s)
 
     # perimeter tests
     def test_zero_perimeter(self):
@@ -72,6 +79,14 @@ class TriangleTestCase(unittest.TestCase):
         a = 5 / 3
         b = 67 / 48
         c = 13 / 2
+        p = a + b + c
+        res = perimeter(a, b, c)
+        self.assertEqual(res, p)
+    
+    def test_negative_perimeter(self):
+        a = -54
+        b = -45
+        c = -53
         p = a + b + c
         res = perimeter(a, b, c)
         self.assertEqual(res, p)

@@ -57,6 +57,12 @@ class CircleTestCase(unittest.TestCase):
         res = area(r)
         self.assertEqual(res, s)
 
+    def test_negative_mul(self):
+        r = -5
+        s = math.pi * r * r
+        res = area(r)
+        self.assertEqual(res, s)
+
     # perimeter tests
     def test_zero_perimeter(self):
         r = 0
@@ -96,6 +102,12 @@ class CircleTestCase(unittest.TestCase):
 
     def test_fraction_perimeter(self):
         r = 67 / 13
+        s = 2 * math.pi * r
+        res = perimeter(r)
+        self.assertEqual(res, s)
+
+    def test_negative_perimeter(self):
+        r = -5
         s = 2 * math.pi * r
         res = perimeter(r)
         self.assertEqual(res, s)

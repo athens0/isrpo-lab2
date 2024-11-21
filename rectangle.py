@@ -43,6 +43,13 @@ class RectangleTestCase(unittest.TestCase):
         res = area(a, b)
         self.assertEqual(res, s)
 
+    def test_negative_mul(self):
+        a = -5
+        b = 4
+        s = a * b
+        res = area(a, b)
+        self.assertEqual(res, s)
+
     # perimeter tests
     def test_zero_perimeter(self):
         res = perimeter(0, 0)
@@ -71,6 +78,13 @@ class RectangleTestCase(unittest.TestCase):
     def test_fraction_perimeter(self):
         a = 5 / 3
         b = 67 / 48
+        p = a * 2 + b * 2
+        res = perimeter(a, b)
+        self.assertEqual(res, p)
+    
+    def test_negative_perimeter(self):
+        a = -5
+        b = 4
         p = a * 2 + b * 2
         res = perimeter(a, b)
         self.assertEqual(res, p)

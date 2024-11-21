@@ -42,6 +42,12 @@ class SquareTestCase(unittest.TestCase):
         s = b * b
         res = area(b)
         self.assertEqual(res, s)
+    
+    def test_negative_mul(self):
+        b = -5
+        s = b * b
+        res = area(b)
+        self.assertEqual(res, s)
 
     # perimeter tests
     def test_zero_perimeter(self):
@@ -70,6 +76,12 @@ class SquareTestCase(unittest.TestCase):
 
     def test_fraction_perimeter(self):
         b = 67 / 48
+        p = b * 4
+        res = perimeter(b)
+        self.assertEqual(res, p)
+    
+    def test_negative_perimeter(self):
+        b = -5
         p = b * 4
         res = perimeter(b)
         self.assertEqual(res, p)
