@@ -31,6 +31,12 @@ import square
 a = int(input())
 print(square.area(a), square.perimeter(a))
 ```
+### Input
+> 3
+
+### Output
+> 9 12
+
 ## circle.py
 ```python
 import circle
@@ -38,6 +44,13 @@ import circle
 r = int(input())
 print(circle.area(r), circle.perimeter(r))
 ```
+
+### Input
+> 3
+
+### Output
+> 28.274333882308138 18.84955592153876
+
 ## rectangle.py
 ```python
 import rectangle
@@ -46,6 +59,14 @@ a = int(input())
 b = int(input())
 print(rectangle.area(a, b), rectangle.perimeter(a, b))
 ```
+
+### Input
+> 3\
+> 4
+
+### Output
+> 12 14
+
 ## triangle.py
 ```python
 import triangle
@@ -56,6 +77,15 @@ c = int(input())
 h = int(input())
 print(triangle.area(a, h), triangle.perimeter(a, b, c))
 ```
+
+### Input
+> 6\
+> 8\
+> 10\
+> 8
+
+### Output
+> 24 48
 
 # Changelog
 - 8ba9aeb L-03: Circle and square added
