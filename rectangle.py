@@ -5,7 +5,7 @@ def area(a, b):
 
 def perimeter(a, b): 
     '''принимает числа a и b, возвращает их удвоенную сумму'''
-    return (a + b)
+    return (a + b) * 2
 
 ### tests
 import unittest
