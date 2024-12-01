@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [ "tests" ]
+
+  workflow_dispatch:
+
+jobs:
+  tests-ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run tests
+        run: |
+          python -m unittest rectangle.py
+          python -m unittest circle.py
+          python -m unittest square.py
+          python -m unittest triangle.py
+
+  tests-windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run tests
+        run: |
+          python -m unittest rectangle.py
+          python -m unittest circle.py
+          python -m unittest square.py
+          python -m unittest triangle.py
